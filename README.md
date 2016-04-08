@@ -9,9 +9,9 @@ implement PSR-7 Interfaces and pass the unit tests. The master code will contain
 
 ###Requirements
 1. Branch this project (name it with ```'<your name>-submission'```).
-1. Ready the project locally as a web service. This means, the index.php script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used as well as Apache w/ mod-php. However you prefer you local setup is up to you - take note that the HTTP headers should reflect your HTTP server choice.
+1. Serve the project locally as a web service. This means, the index.php script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used as well as Apache w/ mod-php. However you prefer you local setup is up to you - take note that the HTTP header ```Server``` should reflect your HTTP server choice.
 1. Pass the [PHP-UNIT](https://phpunit.de/) tests in the tests folder.
-1. index.php - 1-page app root scripts. When a Client (ex. web browser or curl) makes a HTTP Request to ``` <HOST-NAME>/index.php ```, your Server will provide a HTTP Response of:
+1. index.php - This is the application root script. This script must respond to a HTTP Client (ex. web browser or curl) Request  to the application -  ``` <HOST-NAME>/index.php ```. This script must finally return a HTTP Response of:
 ```
 HTTP/1.1 200 OK
 Date: <NOW-DATE-TIME-STRING>
