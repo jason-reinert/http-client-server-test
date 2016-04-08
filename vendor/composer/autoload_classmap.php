@@ -6,4 +6,18 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Psr\\Http\\Message\\MessageInterface' => $baseDir . '/library/http/interfaces/MessageInterface.php',
+    'Psr\\Http\\Message\\RequestInterface' => $baseDir . '/library/http/interfaces/RequestInterface.php',
+    'Psr\\Http\\Message\\ResponseInterface' => $baseDir . '/library/http/interfaces/ResponseInterface.php',
+    'Psr\\Http\\Message\\ServerRequestInterface' => $baseDir . '/library/http/interfaces/ServerRequestInterface.php',
+    'Psr\\Http\\Message\\StreamInterface' => $baseDir . '/library/http/interfaces/StreamInterface.php',
+    'Psr\\Http\\Message\\UploadedFileInterface' => $baseDir . '/library/http/interfaces/UploadedFileInterface.php',
+    'Psr\\Http\\Message\\UriInterface' => $baseDir . '/library/http/interfaces/UriInterface.php',
+    'pillr\\library\\http\\Message' => $baseDir . '/library/http/classes/Message.php',
+    'pillr\\library\\http\\Request' => $baseDir . '/library/http/classes/Request.php',
+    'pillr\\library\\http\\Response' => $baseDir . '/library/http/classes/Response.php',
+    'pillr\\library\\http\\ServerRequest' => $baseDir . '/library/http/classes/ServerRequest.php',
+    'pillr\\library\\http\\Stream' => $baseDir . '/library/http/classes/Stream.php',
+    'pillr\\library\\http\\UploadedFile' => $baseDir . '/library/http/classes/UploadedFile.php',
+    'pillr\\library\\http\\Uri' => $baseDir . '/library/http/classes/Uri.php',
 );
