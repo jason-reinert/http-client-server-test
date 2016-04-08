@@ -7,10 +7,10 @@ to accomplish the Requirements; In contrast, one could decide to show that they 
 a more robust solution. There is an exemplary example in many approaches. 
 
 ###Requirements
-4. Branch this project (name it with '<your name>-submission').
-1. Ready the project locally as a web service. This means, the index.php script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used as well as Apache w/ mod-php.
-2. Pass the [PHP-UNIT](https://phpunit.de/) tests in the tests folder.
-3. When a Client (ex. web browser or curl) makes a HTTP Request, your Server will provide a HTTP Reponse of a application/json type and a message body content w/ the following structure:
+1. Branch this project (name it with ```'<your name>-submission'```).
+1. Ready the project locally as a web service. This means, the index.php script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used as well as Apache w/ mod-php. However you prefer you local setup is up to you - take note that the HTTP headers should reflect your HTTP server choice.
+1. Pass the [PHP-UNIT](https://phpunit.de/) tests in the tests folder.
+1. index.php - 1-page app root scripts. When a Client (ex. web browser or curl) makes a HTTP Request to ``` <HOST-NAME>/index.php ```, your Server will provide a HTTP Reponse of a application/json type and a message body content w/ the following structure:
 ```
 HTTP/1.1 200 OK
 Date: <DATE-TIME-STRING>
