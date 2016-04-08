@@ -1,8 +1,10 @@
 # http-client-server-test
+By Pillr Inc.
+
 A small test which challenges our intern candidates to set-up a basic php environment, 
 implement PSR-7 Interfaces and pass the unit tests. The master code will contain enough to get you started.
 
-PSR-7 "describes common interfaces for representing HTTP messages as described in [RFC   7230](http://tools.ietf.org/html/rfc7230) and [RFC 7231](http://tools.ietf.org/html/rfc7230), and URIs for use with HTTP messages as described in [RFC 3986](http://tools.ietf.org/html/rfc3986)." See [PSR-7: HTTP message interfaces - PHP-FIG](http://www.php-fig.org/psr/psr-7/)
+> **PSR-7** "describes common interfaces for representing HTTP messages as described in [RFC   7230](http://tools.ietf.org/html/rfc7230) and [RFC 7231](http://tools.ietf.org/html/rfc7230), and URIs for use with HTTP messages as described in [RFC 3986](http://tools.ietf.org/html/rfc3986)." See [PSR-7: HTTP message interfaces - PHP-FIG](http://www.php-fig.org/psr/psr-7/)
 
 
 ###Requirements
@@ -25,9 +27,9 @@ Content-Type: application/json
     "timeSent": "<TIMESTAMP>"
 }
 ```
-Note: tagged strings like ```"<TAG-HERE>"``` are variables placeholders for values you provide.
+**Note:** tagged strings like ```"<TAG-HERE>"``` are variables placeholders for values you provide.
 
-Tip: 'Date' and 'Last-Modified' use the date format string is 'D, d M Y H:i:s T'.
+**Tip:** 'Date' and 'Last-Modified' use the date format string is 'D, d M Y H:i:s T'.
 
 We don't discourage any approach to this problem. For example, one can show efficiency and decisiveness in doing the bare minimum
 to accomplish the Requirements; In contrast, one could decide to show that they are capable of going beyond the mean and delivering
@@ -35,7 +37,7 @@ a more robust solution. There is an exemplary example in many approaches.
 
 
 ####Install PHPUnit on your system to complement your php command-line utilities
-See: [Installing PHPUnit](https://phpunit.de/manual/current/en/installation.html)
+**See:** [Installing PHPUnit](https://phpunit.de/manual/current/en/installation.html)
 
 ####OR
 
@@ -55,6 +57,7 @@ Add "phpunit/phpunit": "5.3.*" to the "require-dev" property
 }
 ```
 
+Any questions can be directed to [Jason Reinert](jason.reinert@pillrcompany.com)
 
 ###Reference Material
 - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
