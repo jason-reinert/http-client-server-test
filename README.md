@@ -9,9 +9,9 @@ implement PSR-7 Interfaces and pass the unit tests. The master code will contain
 
 ###Requirements
 1. Branch this project (name it with ```'<your name>-submission'```).
-1. Serve the project locally as a web service. This means, the index.php script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used as well as Apache w/ mod-php. However you prefer you local setup is up to you - take note that the HTTP header ```Server``` should reflect your HTTP server choice.
+1. Serve the project locally as a web service. This means the ```index.php``` script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM for PHP applications. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used, as well as, Apache w/ mod-php. However you prefer your local setup is up to you and of no consequence other than the HTTP header ```Server``` which should reflect your HTTP server choice during your development.
 1. Pass the [PHP-UNIT](https://phpunit.de/) tests in the tests folder.
-1. index.php - This is the application root script. This script must respond to a HTTP Client (ex. web browser or curl) Request  to the application -  ``` <HOST-NAME>/index.php ```. This script must finally return a HTTP Response of:
+1. index.php - The application root script. This root script must respond to a HTTP Client (ex. web browser or curl) Request to the application using the URI ```http://<HOST-NAME>/index.php ```. This script must finally return a HTTP Response of:
 ```
 HTTP/1.1 200 OK
 Date: <NOW-DATE-TIME-STRING>
@@ -33,7 +33,18 @@ Content-Type: application/json
 
 We don't discourage any approach to this problem. For example, one can show efficiency and decisiveness in doing the bare minimum
 to accomplish the Requirements; In contrast, one could decide to show that they are capable of going beyond the mean and delivering
-a more robust solution. There is an exemplary example in many approaches. 
+a more robust solution. There is an exemplary example in many approaches.
+
+####Technology
+
+This small test aims to provide a basic utilization of:
+- Domain-driven design
+- Test-driven development
+- RFC Specification implementation
+- Client-Server architecture
+- Package Management and autoloading
+- PHP Object-Oriented Programming
+- URI Syntax Parsing
 
 
 ####Install PHPUnit on your system to complement your php command-line utilities
@@ -57,7 +68,7 @@ Add "phpunit/phpunit": "5.3.*" to the "require-dev" property
 }
 ```
 
-Any questions can be directed to [Jason Reinert](jason.reinert@pillrcompany.com)
+Any questions or review requests can be directed to [Jason Reinert](jason.reinert@pillrcompany.com)
 
 ###Reference Material
 - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
