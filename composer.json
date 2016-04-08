@@ -1,0 +1,11 @@
+{
+    "require": {
+        "monolog/monolog": "^1.17"
+    },
+    "autoload": {
+        "classmap": [
+            "library/http/interfaces",
+            "library/http/classes/"
+        ]
+    }
+}
