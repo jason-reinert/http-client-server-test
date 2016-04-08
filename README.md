@@ -12,6 +12,7 @@ PSR-7 class implementations are located at ```library/http/classes```. These cla
 ####Technology
 
 This small test aims to provide a basic utilization of:
+- HTTP Protocol
 - Domain-driven design
 - Test-driven development
 - RFC Specification implementation
