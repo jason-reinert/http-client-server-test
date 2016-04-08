@@ -1,5 +1,7 @@
 <?php
 
+require "../vendor/autoload.php";
+
 use \pillr\library\http\Request  as HttpRequest;
 use \pillr\library\http\Response as HttpResponse;
 use \pillr\library\http\Uri      as Uri;
@@ -15,7 +17,7 @@ class TestHttpServer extends \PHPUnit_Framework_TestCase {
  // * - Headers
  // * - Message body
 
-        $uri_string = 'https://pillrcompany.com/intern/test?psr=true';
+        $uri_string = 'https://pillrcompany.com/interns/test?psr=true';
 
         $httpRequest =  new HttpRequest(
             '1.1',
@@ -41,8 +43,16 @@ class TestHttpServer extends \PHPUnit_Framework_TestCase {
         );
 
         $this->assertEquals(
+
             $httpRequest->withRequestTarget('https://pillrcompany.com/intern/alt'),
-            new HttpRequest( Uri('https://pillrcompany.com/intern/alt') )
+            $httpRequest =  new HttpRequest(
+                '1.1',
+                'GET',
+                new Uri('https://pillrcompany.com/intern/alt'),
+                array('Accept' => 'application/json'),
+                ''
+            )
+
         );
 
     }
@@ -54,17 +64,19 @@ class TestHttpServer extends \PHPUnit_Framework_TestCase {
  // * - Status code and reason phrase
  // * - Headers
  // * - Message body
- 
-        $httpResponse =  new HttpRequest(
+
+        $httpResponse =  new HttpResponse(
             '1.1',
-            '200 OK',
+            '200',
+            'OK',
             array('Content-Type' => 'application/json'),
             'hello'
         );
 
-        $httpResponseAlt =  new HttpRequest(
+        $httpResponseAlt =  new HttpResponse(
             '1.1',
-            '404 Not Found',
+            '404',
+            'Not Found',
             array('Content-Type' => 'application/json'),
             'hello'
         );
