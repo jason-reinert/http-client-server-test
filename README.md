@@ -4,10 +4,30 @@ By Pillr Inc.
 A small test which challenges our intern candidates to set-up a basic php environment, 
 implement PSR-7 Interfaces and pass the unit tests. The master code will contain enough to get you started.
 
+PSR-7 Interface specification are located at ```library/http/interfaces```.
+
+PSR-7 class implementations are located at ```library/http/classes```. These classes are intentionally left as shell classes that are not complete.
+
+
+####Technology
+
+This small test aims to provide a basic utilization of:
+- Domain-driven design
+- Test-driven development
+- RFC Specification implementation
+- Client-Server architecture
+- Package Management and autoloading
+- PHP Object-Oriented Programming
+- URI Syntax Parsing
+
+
 > **PSR-7** "describes common interfaces for representing HTTP messages as described in [RFC   7230](http://tools.ietf.org/html/rfc7230) and [RFC 7231](http://tools.ietf.org/html/rfc7230), and URIs for use with HTTP messages as described in [RFC 3986](http://tools.ietf.org/html/rfc3986)." See [PSR-7: HTTP message interfaces - PHP-FIG](http://www.php-fig.org/psr/psr-7/)
 
 
 ###Requirements
+
+This is all that is required to be submitted. However, you get there is up to show.
+
 1. Branch this project (name it with ```'<your name>-submission'```).
 1. Serve the project locally as a web service. This means the ```index.php``` script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM for PHP applications. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used, as well as, Apache w/ mod-php. However you prefer your local setup is up to you and of no consequence other than the HTTP header ```Server``` which should reflect your HTTP server choice during your development.
 1. Pass the [PHP-UNIT](https://phpunit.de/) tests in the tests folder.
@@ -34,18 +54,6 @@ Content-Type: application/json
 We don't discourage any approach to this problem. For example, one can show efficiency and decisiveness in doing the bare minimum
 to accomplish the Requirements; In contrast, one could decide to show that they are capable of going beyond the mean and delivering
 a more robust solution. There is an exemplary example in many approaches.
-
-####Technology
-
-This small test aims to provide a basic utilization of:
-- Domain-driven design
-- Test-driven development
-- RFC Specification implementation
-- Client-Server architecture
-- Package Management and autoloading
-- PHP Object-Oriented Programming
-- URI Syntax Parsing
-
 
 ####Install PHPUnit on your system to complement your php command-line utilities
 **See:** [Installing PHPUnit](https://phpunit.de/manual/current/en/installation.html)
