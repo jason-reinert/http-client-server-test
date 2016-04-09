@@ -30,7 +30,7 @@ This is all that is required to be submitted.
 1. Branch this project (name it with ```'<your name>-submission'```).
 1. Serve the project locally as a web service. This means the ```index.php``` script can be requested via HTTP. At Pillr, we use NGINX w/ PHP-FPM for PHP applications. However, PHP has it's [own web server](http://php.net/manual/en/features.commandline.webserver.php); which could be used, as well as, Apache w/ mod-php. However you prefer your local setup is up to you and of no consequence other than the HTTP header ```Server``` which should reflect your HTTP server choice during your development.
 1. Pass the [PHP-UNIT](https://phpunit.de/) tests in the tests folder.
-1. index.php - The application root script. This root script must respond to a HTTP Client (ex. web browser or curl) Request to the application using the URI ```http://<HOST-NAME>/index.php ```. This script must finally return a HTTP Response of:
+1. index.php - The application root script. This root script must respond to a HTTP Client (ex. web browser or curl) Request to the application using the URI ```http://<HOST-NAME>/index.php ```. All functionality should be performed by some combination of the implementation classes. This script must finally return a HTTP Response of:
 ```
 HTTP/1.1 200 OK
 Date: <NOW-DATE-TIME-STRING>
