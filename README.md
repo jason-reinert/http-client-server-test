@@ -75,7 +75,7 @@ Add "phpunit/phpunit": "5.3.*" to the "require-dev" property
 }
 ```
 
-Any questions or review requests can be directed to [Jason Reinert](jason.reinert@pillrcompany.com)
+Any questions or review requests can be directed to jason.reinert@pillrcompany.com
 
 ###Reference Material
 - [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
