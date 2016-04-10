@@ -39,6 +39,7 @@ Last-Modified: <LAST-TIME-CONTENT-MODIFIED-DATE-TIME-STRING>
 Content-Length: <MESSAGE-BODY-STRING-LENGTH>
 Content-Type: application/json
 {
+    "@id": "<URI-THAT-WAS-REQUESTED>",
     "to": "Pillr",
     "subject": "Hello Pillr",
     "message": "Here is my submission.",
