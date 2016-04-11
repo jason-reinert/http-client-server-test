@@ -1,6 +1,6 @@
 <?php
 
-require __DIR . '/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 use \pillr\library\http\Request  as HttpRequest;
 use \pillr\library\http\Response as HttpResponse;
