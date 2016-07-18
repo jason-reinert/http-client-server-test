@@ -1,7 +1,7 @@
 # http-client-server-test
 By Pillr Inc.
 
-A small test which challenges our intern candidates to set-up a basic php environment, 
+A small test which challenges our candidates to set-up a basic php environment, 
 implement PSR-7 Interfaces and pass the unit tests. The master code will contain enough to get you started.
 
 > **PSR-7** "describes common interfaces for representing HTTP messages as described in [RFC   7230](http://tools.ietf.org/html/rfc7230) and [RFC 7231](http://tools.ietf.org/html/rfc7230), and URIs for use with HTTP messages as described in [RFC 3986](http://tools.ietf.org/html/rfc3986)." See [PSR-7: HTTP message interfaces - PHP-FIG](http://www.php-fig.org/psr/psr-7/)
